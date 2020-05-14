@@ -74,7 +74,7 @@ const createCompanies = () => {
         const company = companies.data;
         let htmlString = []
         for (let keys in company[0]){
-            htmlString.push(`<th>${keys}</th>`)
+            htmlString.push(`<th>${keys.toUpperCase()}</th>`)
         }
         tableHead.innerHTML = htmlString.join('')
         const companyList = company.map(elem => {
