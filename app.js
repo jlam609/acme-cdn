@@ -14,7 +14,8 @@ const tableHead = document.querySelector('thead')
 const tbody = document.querySelector('tbody')
 const createHeader = () => {
     const headerContainer = document.createElement('div')
-    const header = document.createElement('h1')
+    const header = document.createElement('h2')
+    header.classList.add('display-3')
     header.innerHTML = 'Acme CDN\'s'
     headerContainer.append(header)
     body.append(headerContainer)
